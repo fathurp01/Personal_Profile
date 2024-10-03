@@ -1,0 +1,367 @@
+:root {
+  --primary-color: #6c63ff;
+  --bg-color: #f5f5f5;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outlin: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+  color: #000;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-logo {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--bg-color);
+  text-shadow: 0 0 10px var(--primary-color);
+}
+
+.navbar .navbar-nav a {
+  color: var(--primary-color);
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+  font-weight: 600;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px var(--primary-color);
+}
+
+/* Hero */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+  max-width: 80rem;
+}
+
+.hero .content .sub {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-shadow: 0 0 4px var(--primary-color);
+}
+.hero .content .desc span {
+  color: var(--primary-color);
+  text-shadow: 0 0 4px var(--primary-color);
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.hero .content span {
+  color: var(--bg-color);
+  text-shadow: 0 0 4px var(--primary-color);
+  font-size: 2rem;
+}
+
+.hero .content .title {
+  font-size: 3rem;
+  color: var(--bg-color);
+  font-style: italic;
+  text-shadow: 0 0 4px var(--primary-color);
+}
+
+.hero .content .title span {
+  font-size: 4rem;
+  color: var(--primary-color);
+  text-shadow: 0 0 3px var(--primary-color);
+}
+
+.hero .content .desc {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  line-height: 1.5;
+  color: black;
+}
+
+.hero .content .cta {
+  margin-top: 1.8rem;
+  display: inline-block;
+  padding: 1rem 4rem;
+  font-size: 1.4rem;
+  margin-left: 1rem;
+  color: white;
+  font-weight: 600;
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px var(--primary-color);
+}
+
+.hero .content .cta:hover {
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+}
+
+/* About */
+
+.about {
+  padding: 4rem 7% 1.4rem;
+  min-height: 100vh;
+  background-image: url("../img/hero-bg-flip.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about h2,
+.project h2,
+.contact h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 7rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-color);
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--primary-color);
+  text-shadow: 0 0 5px var(--primary-color);
+}
+
+.about .about-content {
+  text-align: center;
+}
+
+.about .about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about .about-container .about-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .about-container .about-profile .img {
+  position: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 5px solid var(--primary-color);
+  box-shadow: 0 0 10px var(--primary-color);
+}
+
+.about .about-container .about-content {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  align-items: left;
+}
+
+.about .about-container .about-content h3 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  text-shadow: 0 0 5px var(--primary-color);
+}
+
+.about .about-container .about-content h3 span {
+  color: var(--bg-color);
+  text-shadow: 0 0 5px var(--primary-color);
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.about .about-container .about-content p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about .about-container .about-content p span {
+  color: var(--primary-color);
+  text-shadow: 0 0 5px var(--primary-color);
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.about .about-container .about-content .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.about .about-container .about-content .link a {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin: 0 0.5rem;
+}
+
+/* Project */
+
+.project {
+  padding: 4rem 7% 1.4rem;
+  min-height: 100vh;
+  background-image: url("../img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.project .project-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.project .project-container .card {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px var(--primary-color);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project .project-container .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project .project-desc {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.project .project-desc .card-desc {
+  position: relative;
+  width: 500px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project .project-desc .card-desc h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  text-shadow: 0 0 5px var(--primary-color);
+  font-weight: 600;
+  text-align: center;
+}
+
+.project .project-desc .card-desc p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Contact */
+
+.contact {
+  padding: 4rem 7% 1.4rem;
+  min-height: 100vh;
+  background-image: url("../img/hero-bg-flip.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact .contact-container {
+  display: flex;
+  justify-content: column;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.contact .contact-container .contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 4rem;
+}
+
+.contact .contact-container .contact-info .info {
+  margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact .contact-container .contact-info .info i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  text-shadow: 0 0 3px var(--primary-color);
+}
+
+.contact .contact-container .contact-info .info p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  text-shadow: 0 0 3px var(--primary-color);
+}
+
+/* footer */
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  text-align: center;
+  padding: 1rem;
+}
